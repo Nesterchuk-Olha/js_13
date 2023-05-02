@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            height: 500px;
+            /* flex-direction: column; */
+            /* justify-content: center; */
+            align-items: center;
+            background-color: yellow;
+        }
+        p {
+            /* width: 150px;  */
+            margin: 0;    
+        }
+        .first {
+            /* order: 1; */
+            background-color: aqua;
+            align-self: flex-start;
+        }
+        .second {
+            /* order: 1; */
+            background-color: red;
+            /* flex-shrink: 2; */
+            /* flex: 2 1 300px; */
+            align-self: flex-end;
+        }
+        .third {
+            background-color: green;
+            /* flex: 1 2 500px; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="first">Hello first</p>
+        <p class="second">Hello second</p>
+        <p class="third">Hello third</p>
+    </div>
+</body>
+</html>
